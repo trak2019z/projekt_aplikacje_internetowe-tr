@@ -1,0 +1,44 @@
+<div id="services">
+
+  <header>
+    <div class="warp">
+      <h1 class="text-center">Usługi</h1>
+      <div class="text-center">
+        <small>Sprawdz co dla Ciebie przygotowaliśmy i dołącz do grona zadowolonych klientów.</small>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <% if @services.blank? %>
+        Brak usług!
+    <% else %>
+        <% @services.each do |s| %>
+
+            <h1><%= s.name %></h1>
+            <div class="line1"></div>
+            <div class="line1"></div>
+            <div class="line1"></div>
+
+            <div class="row">
+
+              <table class="table">
+                <tr>
+                  <th rowspan="2" class="text-center" style="vertical-align: middle">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></th>
+                  <th>Opis usługi</th>
+                  <td class="text-right">Czas trwania: <strong><%= s.duration %></strong> min.</td>
+                  <td class="text-right">Cena: <strong><%= s.price %></strong> zł.</td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="desc"><%= simple_format(s.description) %></td>
+                </tr>
+              </table>
+            </div>
+        <% end %>
+    <% end %>
+
+  </div>
+
+</div>

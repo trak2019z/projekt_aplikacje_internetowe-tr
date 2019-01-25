@@ -1,0 +1,74 @@
+<h1>Komentarze</h1>
+
+<%= @txt %>
+
+<%= form_tag(admin_comments_index_path, :method => 'get') do %>
+    <table class="table">
+      <tr>
+        <th colspan="3">Data
+        <th rowspan="2" class="text-center" style="vertical-align: middle"><%= submit_tag('Filtruj', :class => 'btn btn-primary') %></th>
+      </tr>
+      <tr>
+        <td><%= text_field_tag(:from, @from, :class => 'form-control datepicker') %></td>
+        <td class="text-center" style="vertical-align: middle">-</td>
+        <td><%= text_field_tag(:to, @to, :class => 'form-control datepicker') %></td>
+      </tr>
+    </table>
+<% end %>
+
+<% if @service_visit.blank? %>
+    Brak komentarzy, spróbuj zmienić filtry
+<% else %>
+    <%  @service_visit.each  do |s| %>
+        <% @employee = s.employee %>
+        <% @visit = s.visit %>
+        <% @service = s.service %>
+        <% @client = s.visit.client %>
+        <table class="table table-bordered table-striped table-hover">
+          <thead>
+          <tr>
+            <th>
+              <%= @client.first_name %>
+              <%= @client.last_name %>
+              =>
+              <%= @employee.first_name %>
+              <%= @employee.last_name %>
+              <span class="pull-right"><%= @service.name %></span>
+            </th>
+            <th width="110px">
+              Ocena [ 1..5 ]
+            </th>
+            <th width="50px">
+              Akcja
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>
+              Data wizyty: <%= @visit.start_time %></br>
+              <%= s.client_opinion_comment %></br>
+              Wystawiono: <%= s.client_opinion_added %>
+            </td>
+            <td>
+              <% s.client_opinion_rating.times do %>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <% end %>
+            </td>
+            <td>
+              <p><%= link_to 'Edytuj', admin_comments_edit_path(s) %></p>
+              <p><%#= <%= link_to 'Usuń', admin_comments_remove_path(s) %></p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+    <% end %>
+<% end %>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.datepicker').datepicker({
+      language: 'pl'
+    });
+  });
+</script>

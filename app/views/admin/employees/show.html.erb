@@ -1,0 +1,81 @@
+<table class="table table-striped table-hover">
+  <tr>
+    <th width="350px">Imię</th>
+    <td><%= @employee.first_name %></td>
+  </tr>
+  <tr>
+    <th>Nazwisko</th>
+    <td><%= @employee.last_name %></td>
+  </tr>
+  <tr>
+    <th>E-mail</th>
+    <td><%= @employee.email %></td>
+  </tr>
+  <tr>
+    <th>Administrator</th>
+    <td>
+      <% if @employee.is_admin %>
+      Tak
+      <% else %>
+      Nie
+      <% end %>
+    </td>
+  </tr>
+  <tr>
+    <th>Opis</th>
+    <td><%= @employee.desc %></td>
+  </tr>
+  <tr>
+    <th>Usługi</th>
+    <td>
+      <% if @employee.services.blank? %>
+        Ten pracownik nie oferuje żadnych usług
+      <% else %>
+        <% @employee.services.each do |s| %>
+            <%= s.name %> <br />
+        <% end %>
+      <% end %>
+    </td>
+  </tr>
+</table>
+
+<h1>Opinie</h1>
+
+<% if @service_visit.blank? %>
+    Brak komentarzy
+<% else %>
+    <%  @service_visit.each  do |s| %>
+        <% @employee = s.employee %>
+        <% @visit = s.visit %>
+        <% @service = s.service %>
+        <% @client = s.visit.client %>
+        <table class="table table-bordered table-striped table-hover">
+          <thead>
+          <tr>
+            <th>
+              <%= @client.first_name %>
+              <%= @client.last_name %>
+              <span class="pull-right"><%= @service.name %></span>
+            </th>
+            <th width="110px">
+              Ocena [ 1..5 ]
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>
+              Data wizyty: <%= @visit.start_time %></br>
+              <%= s.client_opinion_comment %></br>
+              Wystawiono: <%= s.client_opinion_added %>
+            </td>
+            <td>
+              <% s.client_opinion_rating.times do %>
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <% end %>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+    <% end %>
+<% end %>

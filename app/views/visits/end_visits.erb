@@ -1,0 +1,25 @@
+<div class="container"><h1>Zakończone wizyty</h1>
+
+  <% if @visits.blank? %>
+      Brak wizyt
+  <% else %>
+      <table class="table table-bordered table-hover table-striped">
+        <tr>
+          <th>Data wizyty</th>
+          <th>Cena [ zł ]</th>
+          <th>Rabat [ % ]</th>
+          <th>Akcje</th>
+        </tr>
+        <% @visits.all.each do |v| %>
+            <tr>
+              <td><%= v.start_time.strftime("%d.%m.%Y %H:%M") %></td>
+              <td><%= v.price %></td>
+              <td><%= v.discount %></td>
+              <td width="150px">
+                <%= link_to 'Edytuj Komentarz', clients_edit_comment_path(v) %>
+              </td>
+            </tr>
+        <% end %>
+      </table>
+  <% end %>
+</div>

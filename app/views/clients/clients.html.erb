@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="nav nav-sidebar">
+        <li><a style="font-weight: bold;color: #fff; background: #222" class="text-center">Witaj <%= current_client.first_name%> <%= current_client.last_name %></a></li>
+        <%= nav_link 'Edytuj konto', :clients_edit %>
+        <%= nav_link 'Zakończone wizyty', :clients_end_visits %>
+        <%= nav_link 'Zarezerwowane wizyty', :clients_reserved_visits %>
+      </ul>
+    </div>
+    <div class="col-sm-9 col-md-10 main">
+      <% if alert %>
+      <div class="alert alert-warning"><%= alert %></div>
+      <% end %>
+      <% if notice %>
+      <div class="alert alert-success"><%= notice %></div>
+      <% end %>
+      <%= yield %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,113 @@
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag 'slide1.jpg', alt: '' %>
+      <div class="carousel-caption">
+        To jest przykładowy podpis
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag 'slide2.jpg', alt: '' %>
+      <div class="carousel-caption">
+        To jest przykładowy podpis
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 bluebg homebox">
+      <span class="glyphicon glyphicon-plus"></span>
+      <h1>Usługi</h1>
+      <p>Nasze usługi coś tam coś tam coś tam coś tam.</p>
+      <a class="btn btn-default" href="services">Czytaj więcej</a>
+    </div>
+    <div class="col-md-4 homebox">
+
+
+      <span class="glyphicon glyphicon-time"></span>
+      <h1>Godziny otwarcia</h1>
+      <p>Nasi specjaliści czekają na Ciebie.</p>
+
+      <ul class="list-unstyled">
+        <li class="clearfix">
+						<span>
+							Poniedziałek - Piątek
+						</span>
+                    <span class="pull-right">
+                        9.30 - 17.00
+                    </span>
+        </li>
+        <li class="clearfix">
+						<span>
+							Sobota
+						</span>
+                    <span class="pull-right">
+                        9.30 - 17.00
+                    </span>
+        </li>
+        <li class="clearfix">
+						<span>
+							Niedziela
+						</span>
+                    <span class="pull-right">
+                        nieczynne
+                    </span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4 bluebg homebox">
+
+      <span class="glyphicon glyphicon-tint"></span>
+      <h1>O Nas</h1>
+      <p>Chcesz wiedzieć wiecej?</p>
+      <a class="btn btn-default" href="about">Czytaj więcej</a>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+
+<div class="container" id="hp-empployees">
+
+  <h1>NASZ ZESPÓŁ</h1>
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= image_tag 'tm1.jpg', alt: '', :class => 'img-responsive' %>
+      <p class="employee">dr. Marek Niemiec</p>
+      <p class="text-muted">specjalista ds. skóry</p>
+      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros eget nisl fringilla commodo. Maecenas ornare, augue ut ultricies tristique, enim lectus pretium quam, quis bibendum metus tellus sed magna. Donec eu dolor.</p>
+    </div>
+    <div class="col-md-4">
+      <%= image_tag 'tm2.jpg', alt: '', :class => 'img-responsive' %>
+      <p class="employee">dr. Alicja Nowak</p>
+      <p class="text-muted">specjalista ds. cery</p>
+      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros eget nisl fringilla commodo. Maecenas ornare, augue ut ultricies tristique, enim lectus pretium quam, quis bibendum metus tellus sed magna. Donec eu dolor.</p>
+    </div>
+    <div class="col-md-4">
+      <%= image_tag 'tm3.jpg', alt: '', :class => 'img-responsive' %>
+      <p class="employee">dr. Adam Bednarz</p>
+      <p class="text-muted">makijażysta</p>
+      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros eget nisl fringilla commodo. Maecenas ornare, augue ut ultricies tristique, enim lectus pretium quam, quis bibendum metus tellus sed magna. Donec eu dolor.</p>
+    </div>
+  </div>
+
+</div>

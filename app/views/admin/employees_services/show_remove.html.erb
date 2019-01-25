@@ -1,0 +1,29 @@
+<h1>Usuwanie usług</h1>
+
+<% @services = @employee.services.all %>
+<% if @services.blank? %>
+    <p>Brak usług</p>
+<% else %>
+    <% @services.each do |a| %>
+        <table class="table table-bordered table-striped table-hover">
+          <thead>
+            <th width="150px">
+              <%= a.name %>
+            </th>
+            <th width="50px">
+              Akcja
+            </th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+              <%= a.description %>
+              </td>
+              <td>
+                <%= link_to 'Usuń', admin_employees_services_remove_path(@employee, a) %>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    <% end %>
+<% end %>

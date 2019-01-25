@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col-md-3">
+    <div class="info-box">
+      <span class="info-box-icon" style="background-color: #00c0ef"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
+
+      <div class="info-box-content">
+        <span class="info-box-text">Wizyt dziś</span>
+        <span class="info-box-number"><%= Visit.where(:start_time => DateTime.now.beginning_of_day()..(DateTime.now.beginning_of_day() + 1.day)).count %></span>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="info-box">
+      <span class="info-box-icon" style="background-color: #dd4b39"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
+
+      <div class="info-box-content">
+        <span class="info-box-text">Wizyt w tym tygodniu</span>
+        <span class="info-box-number"><%= Visit.where(:start_time => DateTime.now.beginning_of_week()..(DateTime.now.beginning_of_week() + 1.week)).count %></span>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="info-box">
+      <span class="info-box-icon" style="background-color: #00a65a"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
+
+      <div class="info-box-content">
+        <span class="info-box-text">Wizyt w tym miesiącu</span>
+        <span class="info-box-number"><%= Visit.where(:start_time => DateTime.now.beginning_of_month()..(DateTime.now.beginning_of_month() + 1.month)).count %></span>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="info-box">
+      <span class="info-box-icon" style="background-color: #f39c12"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
+
+      <div class="info-box-content">
+        <span class="info-box-text">Wizyt łącznie</span>
+        <span class="info-box-number"><%= Visit.count %></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div id="donutchart" style="height: 400px"></div>
+  </div>
+  <div class="col-md-6"></div>
+</div>
+

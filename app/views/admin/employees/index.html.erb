@@ -1,0 +1,48 @@
+<h1>Pracownicy<% if current_employee.is_admin? %><%= link_to 'Dodaj nowego pracownika', admin_employees_new_path, class: 'btn btn-primary pull-right' %><% end %></h1>
+
+<div class="clearfix"></div>
+
+<% if @employees.blank? %>
+    Brak pracowników !
+<% else %>
+<table class="table table-bordered table-striped table-hover">
+  <thead>
+    <tr>
+      <th>
+        Imię
+      </th>
+      <th>
+        Nazwisko
+      </th>
+      <th>
+        Opis
+      </th>
+      <% if current_employee.is_admin? %>
+        <th width="160px">
+          Akcja
+        </th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <% @employees.each do |employee| %>
+        <tr>
+          <td><%= employee.first_name %>
+          <% if employee.is_admin %>
+            <span style="color: red">(admin)</span>
+          <% end %>
+          </td>
+          <td><%= employee.last_name %></td>
+          <td><%= employee.desc %></td>
+          <% if current_employee.is_admin? %>
+            <td>
+              <%= link_to 'Pokaż', admin_employee_show_path(employee) %> |
+              <%= link_to 'Edytuj', admin_employee_edit_path(employee) %>
+              <%# <%= link_to 'Usuń', admin_employee_remove_path(employee) %>
+            </td>
+          <% end %>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
+<% end %>

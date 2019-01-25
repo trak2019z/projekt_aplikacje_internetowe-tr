@@ -1,0 +1,41 @@
+<table class="table table-hover table-striped table-bordered">
+  <thead>
+  <tr>
+    <th class="text-center">Okres</th>
+    <th class="text-center">Suma</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th colspan="2">W tym miesiącu</th>
+  </tr>
+  <% @days.each do |s| %>
+      <tr>
+        <td><%= s.start_time.strftime('%d.%m.%Y') %></td>
+        <td class="text-right"><%= s.price %> zł</td>
+      </tr>
+  <% end %>
+  <tr>
+    <th colspan="2">Według miesięcy</th>
+  </tr>
+  <% @months.each do |s| %>
+      <tr>
+        <td><%= s.start_time.strftime('%Y-%W') %></td>
+        <td class="text-right"><%= s.price %> zł</td>
+      </tr>
+  <% end %>
+  <tr>
+    <th colspan="2">Według lat</th>
+  </tr>
+  <% @years.each do |s| %>
+      <tr>
+        <td><%= s.start_time.strftime('%Y') %>r</td>
+        <td class="text-right"><%= s.price %> zł</td>
+      </tr>
+  <% end %>
+  <tr>
+    <th class="text-right">Razem:</th>
+    <td class="text-right"><%= @total %> zł</td>
+  </tr>
+  </tbody>
+</table>

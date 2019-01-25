@@ -1,0 +1,47 @@
+<div id="employees">
+
+  <header>
+    <div class="warp">
+      <h1 class="text-center">Pracownicy</h1>
+      <div class="text-center">
+        <small>Doświadczony zespół specjalistów stale podnoszących swoje kwalifikacje</small>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <br>
+    <p>Świadomość własnego piękna jest gwarancją miłości do samego siebie. Doskonale wie o tym personel Salonu Kosmetycznego i dlatego dokłada wszelkich starań, aby właściwie podkreślić i wyeksponować atuty każdego człowieka.
+      Na tym jednak nie kończy się zadanie specjalistów, bowiem najważniejsze jest uzmysłowienie klientom ich prawdziwego piękna.
+      Pracownicy Salonu Kosmetycznego wykonują swój zawód z pasją i z zaangażowaniem, nieustannie pogłębiając wiedzę i zdobywając nowe umiejętności w Polsce i za granicą.
+      Nieustanny rozwój owocuje najwyższej jakości usługami i profesjonalnym podejściem do każdego klienta.</p>
+    <% if @Employee.blank? %>
+        Brak usług!
+    <% else %>
+        <% @Employee.each do |e| %>
+
+            <h1><%= e.first_name + ' ' + e.last_name %></h1>
+            <div class="line1"></div>
+            <div class="line1"></div>
+            <div class="line1"></div>
+
+            <div class="row">
+
+              <table class="table">
+                <tr>
+                  <th rowspan="2" class="text-center" style="vertical-align: middle">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></th>
+                  <th>O pracowniku:</th>
+                  <td class="text-right">Kontakt: <strong><%= e.email %></strong></td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="desc"><%= simple_format(e.desc) %></td>
+                </tr>
+              </table>
+            </div>
+        <% end %>
+    <% end %>
+
+  </div>
+
+</div>

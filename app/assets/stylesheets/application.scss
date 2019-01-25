@@ -1,0 +1,201 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require homepage
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html
+{
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 220px 0;
+  color: #393939;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+  background: #fff;
+  border-top: 3px solid #2b96cc;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: #fff;
+}
+
+#nawigacja .dropdown-menu a {
+  padding: 5px 20px;
+}
+
+#nawigacja li a {
+  padding: 20px;
+  text-transform: uppercase;
+  color: #707070;
+  margin-right: 2px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+#nawigacja li.active a, #nawigacja li a:hover {
+  color: #fff;
+  background: #2b96cc;
+  transition: 0.3s;
+}
+
+.navbar-default {
+  background: #fff;
+  border: none;
+}
+
+#footer {
+  background: #393939;
+  color: #aaa;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  a {
+    color: #fff;
+  }
+
+  li {
+    border-bottom: 1px solid #777;
+
+    a {
+      display: block;
+      padding: 5px;
+    }
+  }
+
+  h1 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #777;
+    margin: 20px 0;
+
+    span {
+      font-size: 23px;
+      padding: 5px 10px;
+      display: block;
+      float: left;
+      border-bottom: 2px solid #2b96cc;
+      margin-bottom: -2px;
+    }
+  }
+}
+
+.socialmedia {
+  img {
+    max-height: 30px;
+  }
+
+}
+
+#reservation-container {
+  margin: 150px 0;
+  input[type=text], label {
+    display: block;
+  }
+}
+
+#services, #about, #employees {
+
+  header {
+    background-image: url("slide2.jpg");
+    background-size: cover;
+
+    .warp {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 30px 0;
+
+      h1 {
+        color: #fff;
+        text-shadow: 0px 0px 2px #000;
+      }
+
+      small {
+        color: #ccc;
+      }
+    }
+  }
+
+  .container {
+    h1 {
+      color: #2b96cc;
+      text-transform: uppercase;
+    }
+
+    .row {
+      margin: 10px 0;
+
+      th, td {
+        border: 0;
+      }
+
+      .glyphicon {
+        font-size: 2.5em;
+      }
+
+      .desc p{
+        text-align: justify;
+      }
+    }
+  }
+
+}
+
+.line1 {
+  height: 1px;
+  margin-bottom: 1px;
+  background: #d7d7d7;
+}
+
+#hp-empployees
+{
+  h1
+  {
+    color: #2b96cc;
+    text-transform: uppercase;
+  }
+
+  .employee
+  {
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    color: #2b96cc;
+    text-transform: uppercase;
+  }
+
+  .desc
+  {
+    text-align: justify;
+  }
+}
