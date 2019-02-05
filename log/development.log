@@ -19286,3 +19286,823 @@ Started GET "/assets/jquery.validationEngine-pl.js" for 127.0.0.1 at 2019-02-05 
 Started GET "/assets/jquery.validationEngine.js" for 127.0.0.1 at 2019-02-05 14:28:30 +0100
 Started GET "/assets/validationEngine.jquery.css" for 127.0.0.1 at 2019-02-05 14:28:30 +0100
 Started GET "/assets/favicon-f1825bdfa7d66f859ca344f254db1da48f983193deb6cc1a037da3ebcff6c87c.ico" for 127.0.0.1 at 2019-02-05 14:28:30 +0100
+Started GET "/" for 127.0.0.1 at 2019-02-05 14:52:29 +0100
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (6.3ms)
+  [1m[36mClient Load (11.9ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 ORDER BY "clients"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 189ms (Views: 121.9ms | ActiveRecord: 46.2ms)
+
+
+Started GET "/assets/jquery.validationEngine.js" for 127.0.0.1 at 2019-02-05 14:52:30 +0100
+Started GET "/assets/jquery.validationEngine-pl.js" for 127.0.0.1 at 2019-02-05 14:52:30 +0100
+Started GET "/assets/validationEngine.jquery.css" for 127.0.0.1 at 2019-02-05 14:52:30 +0100
+Started GET "/" for 127.0.0.1 at 2019-02-05 14:52:30 +0100
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (5.6ms)
+  [1m[36mClient Load (0.8ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 ORDER BY "clients"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 134ms (Views: 119.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-02-05 14:52:33 +0100
+Processing by AdminController#login as HTML
+  Rendering devise/sessions/new.html.erb within layouts/admin
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/admin (41.9ms)
+Completed 200 OK in 166ms (Views: 165.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.validationEngine-pl.js" for 127.0.0.1 at 2019-02-05 14:52:33 +0100
+Started GET "/assets/validationEngine.jquery.css" for 127.0.0.1 at 2019-02-05 14:52:33 +0100
+Started GET "/assets/jquery.validationEngine.js" for 127.0.0.1 at 2019-02-05 14:52:33 +0100
+Started GET "/admin" for 127.0.0.1 at 2019-02-05 14:52:34 +0100
+Processing by AdminController#login as HTML
+  Rendering devise/sessions/new.html.erb within layouts/admin
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/admin (15.1ms)
+Completed 200 OK in 104ms (Views: 103.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.validationEngine.js" for 127.0.0.1 at 2019-02-05 14:52:34 +0100
+Started GET "/assets/jquery.validationEngine-pl.js" for 127.0.0.1 at 2019-02-05 14:52:34 +0100
+Started POST "/admin/login" for 127.0.0.1 at 2019-02-05 14:52:37 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ovZwGE/ZspkWKyeYtBBATj/bAZwKLxic3eokXyvlIV78rzpcWRcRkZH4rvAt2bMC+K4XaApgHR/hGL2H4OaATA==", "employee"=>{"email"=>"bartosz@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Zaloguj"}
+  [1m[36mEmployee Load (12.2ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."email" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["email", "bartosz@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEmployee Update (0.4ms)[0m  [1m[33mUPDATE "employees" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "employees"."id" = $5[0m  [["current_sign_in_at", "2019-02-05 13:52:37.393797"], ["last_sign_in_at", "2019-02-05 13:00:22.174115"], ["sign_in_count", 3], ["updated_at", "2019-02-05 13:52:37.394329"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 200ms (ActiveRecord: 16.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-02-05 14:52:37 +0100
+Processing by AdminController#login as HTML
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/admin/index
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/index" for 127.0.0.1 at 2019-02-05 14:52:37 +0100
+Processing by AdminController#index as HTML
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/index.html.erb within layouts/admin
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2[0m  [["start_time", "2019-02-04 23:00:00"], ["start_time", "2019-02-05 23:00:00"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2[0m  [["start_time", "2019-02-03 23:00:00"], ["start_time", "2019-02-10 23:00:00"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2[0m  [["start_time", "2019-01-31 23:00:00"], ["start_time", "2019-02-28 23:00:00"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "visits"[0m
+  Rendered admin/index.html.erb within layouts/admin (4.3ms)
+Completed 200 OK in 116ms (Views: 87.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/jquery.validationEngine-pl.js" for 127.0.0.1 at 2019-02-05 14:52:37 +0100
+Started GET "/assets/jquery.validationEngine.js" for 127.0.0.1 at 2019-02-05 14:52:37 +0100
+Started GET "/assets/validationEngine.jquery.css" for 127.0.0.1 at 2019-02-05 14:52:37 +0100
+Started GET "/admin/visits/index" for 127.0.0.1 at 2019-02-05 14:52:39 +0100
+Processing by Admin::VisitsController#index as HTML
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.3ms)[0m  [1m[34mSELECT "visits".* FROM "visits"[0m
+  [1m[36mServiceVisit Load (0.5ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 1]]
+  [1m[36mService Load (11.7ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 2]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 4]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 5]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/visits/index.html.erb within layouts/admin
+  [1m[36mVisit Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 LIMIT $3[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.5ms)[0m  [1m[34mSELECT "visits".* FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 ORDER BY "visits"."start_time" ASC[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered admin/visits/index.html.erb within layouts/admin (4.4ms)
+Completed 200 OK in 133ms (Views: 92.1ms | ActiveRecord: 19.4ms)
+
+
+Started GET "/admin/visits/edit/3" for 127.0.0.1 at 2019-02-05 14:52:44 +0100
+Processing by Admin::VisitsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (16.6ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.5ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  Rendering admin/visits/new.html.erb within layouts/admin
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "lower(last_name)", "lower(first_name)". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in _app_views_admin_visits_new_html_erb__1002962395_74728300 at C:/Users/b-pc/Desktop/repoo/projekt_aplikacje_internetowe/app/views/admin/visits/new.html.erb:15)
+  [1m[36mClient Load (0.9ms)[0m  [1m[34mSELECT "clients".* FROM "clients" ORDER BY lower(last_name), lower(first_name)[0m
+  Rendered admin/visits/new.html.erb within layouts/admin (3.6ms)
+Completed 200 OK in 119ms (Views: 94.7ms | ActiveRecord: 18.4ms)
+
+
+Started GET "/admin/visits/scheduler/1" for 127.0.0.1 at 2019-02-05 14:52:45 +0100
+Processing by Admin::VisitsController#scheduler as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mVisit Load (0.6ms)[0m  [1m[34mSELECT "visits"."id", "visits"."start_time", SUM("duration") as duration FROM "visits" LEFT JOIN "services_visits" ON "visits"."id"="services_visits"."visit_id" LEFT JOIN "services" ON "services"."id"="services_visits"."service_id" LEFT JOIN "employees" ON "employees"."id"="services_visits"."employee_id" WHERE "services_visits"."employee_id" = $1 GROUP BY "visits"."id"[0m  [["employee_id", "1"]]
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/admin/visits/update/3" for 127.0.0.1 at 2019-02-05 14:52:52 +0100
+Processing by Admin::VisitsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dAHOgSoljPVv5xyP5GBAb4M04LNfZQhgcq/455y32eWzX54lw3CFuThKGyhOhNQs8cHPb7anqxGasWaOG8XXkg==", "visit"=>{"client_id"=>"1", "status"=>"true", "comments"=>"", "discount"=>"0", "services"=>["1,1"], "start_time"=>"2019-02-05 15:15:00 UTC"}, "id"=>"3"}
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.4ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("services"."price") FROM "services" WHERE "services"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mServiceVisit Destroy (0.3ms)[0m  [1m[31mDELETE FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mServiceVisit Create (0.3ms)[0m  [1m[32mINSERT INTO "services_visits" ("client_id", "employee_id", "service_id", "visit_id", "client_opinion_rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["client_id", 1], ["employee_id", 1], ["service_id", 1], ["visit_id", 3], ["client_opinion_rating", 1], ["created_at", "2019-02-05 13:52:52.745579"], ["updated_at", "2019-02-05 13:52:52.745579"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/visits/edit/3
+Completed 302 Found in 7ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/visits/edit/3" for 127.0.0.1 at 2019-02-05 14:52:52 +0100
+Processing by Admin::VisitsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.2ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.6ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  Rendering admin/visits/new.html.erb within layouts/admin
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "lower(last_name)", "lower(first_name)". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in _app_views_admin_visits_new_html_erb__1002962395_103874040 at C:/Users/b-pc/Desktop/repoo/projekt_aplikacje_internetowe/app/views/admin/visits/new.html.erb:15)
+  [1m[36mClient Load (0.5ms)[0m  [1m[34mSELECT "clients".* FROM "clients" ORDER BY lower(last_name), lower(first_name)[0m
+  Rendered admin/visits/new.html.erb within layouts/admin (3.2ms)
+Completed 200 OK in 98ms (Views: 93.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/jquery.validationEngine-pl.js" for 127.0.0.1 at 2019-02-05 14:52:52 +0100
+Started GET "/assets/validationEngine.jquery.css" for 127.0.0.1 at 2019-02-05 14:52:52 +0100
+Started GET "/assets/jquery.validationEngine.js" for 127.0.0.1 at 2019-02-05 14:52:52 +0100
+Started GET "/admin/visits/scheduler/1" for 127.0.0.1 at 2019-02-05 14:52:53 +0100
+Processing by Admin::VisitsController#scheduler as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mVisit Load (2.1ms)[0m  [1m[34mSELECT "visits"."id", "visits"."start_time", SUM("duration") as duration FROM "visits" LEFT JOIN "services_visits" ON "visits"."id"="services_visits"."visit_id" LEFT JOIN "services" ON "services"."id"="services_visits"."service_id" LEFT JOIN "employees" ON "employees"."id"="services_visits"."employee_id" WHERE "services_visits"."employee_id" = $1 GROUP BY "visits"."id"[0m  [["employee_id", "1"]]
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/admin/visits/edit/3" for 127.0.0.1 at 2019-02-05 14:54:33 +0100
+Processing by Admin::VisitsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.3ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.4ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.7ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  Rendering admin/visits/new.html.erb within layouts/admin
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "lower(last_name)", "lower(first_name)". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in _app_views_admin_visits_new_html_erb__1002962395_103901520 at C:/Users/b-pc/Desktop/repoo/projekt_aplikacje_internetowe/app/views/admin/visits/new.html.erb:15)
+  [1m[36mClient Load (0.5ms)[0m  [1m[34mSELECT "clients".* FROM "clients" ORDER BY lower(last_name), lower(first_name)[0m
+  Rendered admin/visits/new.html.erb within layouts/admin (13.1ms)
+Completed 200 OK in 217ms (Views: 101.6ms | ActiveRecord: 53.4ms)
+
+
+Started GET "/assets/jquery.validationEngine-pl.js" for 127.0.0.1 at 2019-02-05 14:54:33 +0100
+Started GET "/assets/jquery.validationEngine.js" for 127.0.0.1 at 2019-02-05 14:54:33 +0100
+Started GET "/assets/validationEngine.jquery.css" for 127.0.0.1 at 2019-02-05 14:54:33 +0100
+Started GET "/admin/visits/scheduler/1" for 127.0.0.1 at 2019-02-05 14:54:33 +0100
+Processing by Admin::VisitsController#scheduler as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mVisit Load (0.9ms)[0m  [1m[34mSELECT "visits"."id", "visits"."start_time", SUM("duration") as duration FROM "visits" LEFT JOIN "services_visits" ON "visits"."id"="services_visits"."visit_id" LEFT JOIN "services" ON "services"."id"="services_visits"."service_id" LEFT JOIN "employees" ON "employees"."id"="services_visits"."employee_id" WHERE "services_visits"."employee_id" = $1 GROUP BY "visits"."id"[0m  [["employee_id", "1"]]
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/favicon-f1825bdfa7d66f859ca344f254db1da48f983193deb6cc1a037da3ebcff6c87c.ico" for 127.0.0.1 at 2019-02-05 14:54:34 +0100
+Started GET "/admin/incomes/index" for 127.0.0.1 at 2019-02-05 14:54:38 +0100
+Processing by Admin::IncomesController#index as HTML
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.5ms)[0m  [1m[34mSELECT start_time,SUM(price) as price FROM "visits" WHERE "visits"."status" = $1 GROUP BY "visits"."start_time" ORDER BY start_time DESC[0m  [["status", true]]
+  Rendering admin/incomes/index.html.erb within layouts/admin
+  [1m[36mVisit Load (0.5ms)[0m  [1m[34mSELECT start_time,SUM(price) as price FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 AND "visits"."status" = $3 GROUP BY "visits"."start_time" ORDER BY start_time DESC[0m  [["start_time", "2019-01-31 23:00:00"], ["start_time", "2019-02-28 22:59:59.999999"], ["status", true]]
+  [1m[36mCACHE Visit Load (0.0ms)[0m  [1m[34mSELECT start_time,SUM(price) as price FROM "visits" WHERE "visits"."status" = $1 GROUP BY "visits"."start_time" ORDER BY start_time DESC[0m  [["status", true]]
+  Rendered admin/incomes/index.html.erb within layouts/admin (2.3ms)
+Completed 200 OK in 124ms (Views: 96.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/visits/index" for 127.0.0.1 at 2019-02-05 14:54:38 +0100
+Processing by Admin::VisitsController#index as HTML
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT "visits".* FROM "visits"[0m
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 1]]
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.2ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 2]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.2ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 4]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.2ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 5]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/visits/index.html.erb within layouts/admin
+  [1m[36mVisit Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 LIMIT $3[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.3ms)[0m  [1m[34mSELECT "visits".* FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 ORDER BY "visits"."start_time" ASC[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered admin/visits/index.html.erb within layouts/admin (4.2ms)
+Completed 200 OK in 119ms (Views: 90.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/admin/visits/edit/3" for 127.0.0.1 at 2019-02-05 14:54:41 +0100
+Started GET "/admin/visits/scheduler/1,1" for 127.0.0.1 at 2019-02-05 14:54:41 +0100
+Processing by Admin::VisitsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+Processing by Admin::VisitsController#scheduler as JSON
+  Parameters: {"id"=>"1,1"}
+  [1m[36mServiceVisit Load (0.7ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[36mVisit Load (12.6ms)[0m  [1m[34mSELECT "visits"."id", "visits"."start_time", SUM("duration") as duration FROM "visits" LEFT JOIN "services_visits" ON "visits"."id"="services_visits"."visit_id" LEFT JOIN "services" ON "services"."id"="services_visits"."service_id" LEFT JOIN "employees" ON "employees"."id"="services_visits"."employee_id" WHERE "services_visits"."employee_id" = $1 GROUP BY "visits"."id"[0m  [["employee_id", "1"]]
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 12.6ms)
+
+
+  Rendering admin/visits/new.html.erb within layouts/admin
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "lower(last_name)", "lower(first_name)". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in _app_views_admin_visits_new_html_erb__1002962395_92793940 at C:/Users/b-pc/Desktop/repoo/projekt_aplikacje_internetowe/app/views/admin/visits/new.html.erb:15)
+  [1m[36mClient Load (0.7ms)[0m  [1m[34mSELECT "clients".* FROM "clients" ORDER BY lower(last_name), lower(first_name)[0m
+  Rendered admin/visits/new.html.erb within layouts/admin (3.8ms)
+Completed 200 OK in 108ms (Views: 98.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/admin/visits/scheduler/1" for 127.0.0.1 at 2019-02-05 14:54:41 +0100
+Processing by Admin::VisitsController#scheduler as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mVisit Load (0.5ms)[0m  [1m[34mSELECT "visits"."id", "visits"."start_time", SUM("duration") as duration FROM "visits" LEFT JOIN "services_visits" ON "visits"."id"="services_visits"."visit_id" LEFT JOIN "services" ON "services"."id"="services_visits"."service_id" LEFT JOIN "employees" ON "employees"."id"="services_visits"."employee_id" WHERE "services_visits"."employee_id" = $1 GROUP BY "visits"."id"[0m  [["employee_id", "1"]]
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/admin/visits/update/3" for 127.0.0.1 at 2019-02-05 14:54:45 +0100
+Processing by Admin::VisitsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"06mE63nrtOXIRpevo2Q6bBRfJtF+9WFhq15LBydyXL4U99RPkL69qZ/rkAgJgK4vZqoJDZc3whBDQNVuoABSyQ==", "visit"=>{"client_id"=>"1", "status"=>"true", "comments"=>"", "discount"=>"0", "services"=>["1,1"], "start_time"=>"2019-02-05 15:15:00 UTC"}, "id"=>"3"}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.2ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.7ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("services"."price") FROM "services" WHERE "services"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mServiceVisit Destroy (4.1ms)[0m  [1m[31mDELETE FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mServiceVisit Create (0.4ms)[0m  [1m[32mINSERT INTO "services_visits" ("client_id", "employee_id", "service_id", "visit_id", "client_opinion_rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["client_id", 1], ["employee_id", 1], ["service_id", 1], ["visit_id", 3], ["client_opinion_rating", 1], ["created_at", "2019-02-05 13:54:45.633092"], ["updated_at", "2019-02-05 13:54:45.633092"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/visits/edit/3
+Completed 302 Found in 12ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/admin/visits/edit/3" for 127.0.0.1 at 2019-02-05 14:54:45 +0100
+Processing by Admin::VisitsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.6ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  Rendering admin/visits/new.html.erb within layouts/admin
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "lower(last_name)", "lower(first_name)". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in _app_views_admin_visits_new_html_erb__1002962395_103658360 at C:/Users/b-pc/Desktop/repoo/projekt_aplikacje_internetowe/app/views/admin/visits/new.html.erb:15)
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT "clients".* FROM "clients" ORDER BY lower(last_name), lower(first_name)[0m
+  Rendered admin/visits/new.html.erb within layouts/admin (3.8ms)
+Completed 200 OK in 104ms (Views: 98.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/jquery.validationEngine-pl.js" for 127.0.0.1 at 2019-02-05 14:54:45 +0100
+Started GET "/assets/jquery.validationEngine.js" for 127.0.0.1 at 2019-02-05 14:54:45 +0100
+Started GET "/assets/validationEngine.jquery.css" for 127.0.0.1 at 2019-02-05 14:54:45 +0100
+Started GET "/admin/visits/scheduler/1" for 127.0.0.1 at 2019-02-05 14:54:45 +0100
+Processing by Admin::VisitsController#scheduler as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mVisit Load (1.1ms)[0m  [1m[34mSELECT "visits"."id", "visits"."start_time", SUM("duration") as duration FROM "visits" LEFT JOIN "services_visits" ON "visits"."id"="services_visits"."visit_id" LEFT JOIN "services" ON "services"."id"="services_visits"."service_id" LEFT JOIN "employees" ON "employees"."id"="services_visits"."employee_id" WHERE "services_visits"."employee_id" = $1 GROUP BY "visits"."id"[0m  [["employee_id", "1"]]
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/admin/visits/update/3" for 127.0.0.1 at 2019-02-05 14:55:00 +0100
+Processing by Admin::VisitsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AUexxhCOFNeRqRAYlLRdhtb7mxalVS6yFdjyU6iRzZ7GGeFi+dsdm8YEF78+UMnFpA60ykyXjcP9xmw6L+PD6Q==", "visit"=>{"client_id"=>"1", "status"=>"false", "comments"=>"", "discount"=>"0", "services"=>["1,1"], "start_time"=>"2019-02-05 15:15:00 UTC"}, "id"=>"3"}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.2ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.7ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("services"."price") FROM "services" WHERE "services"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVisit Update (0.4ms)[0m  [1m[33mUPDATE "visits" SET "status" = $1, "updated_at" = $2 WHERE "visits"."id" = $3[0m  [["status", false], ["updated_at", "2019-02-05 13:55:00.288875"], ["id", 3]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mServiceVisit Destroy (0.4ms)[0m  [1m[31mDELETE FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mServiceVisit Create (0.4ms)[0m  [1m[32mINSERT INTO "services_visits" ("client_id", "employee_id", "service_id", "visit_id", "client_opinion_rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["client_id", 1], ["employee_id", 1], ["service_id", 1], ["visit_id", 3], ["client_opinion_rating", 1], ["created_at", "2019-02-05 13:55:00.294486"], ["updated_at", "2019-02-05 13:55:00.294486"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/visits/edit/3
+Completed 302 Found in 13ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/admin/visits/edit/3" for 127.0.0.1 at 2019-02-05 14:55:00 +0100
+Processing by Admin::VisitsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.2ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.7ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  Rendering admin/visits/new.html.erb within layouts/admin
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "lower(last_name)", "lower(first_name)". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in _app_views_admin_visits_new_html_erb__1002962395_79262980 at C:/Users/b-pc/Desktop/repoo/projekt_aplikacje_internetowe/app/views/admin/visits/new.html.erb:15)
+  [1m[36mClient Load (0.5ms)[0m  [1m[34mSELECT "clients".* FROM "clients" ORDER BY lower(last_name), lower(first_name)[0m
+  Rendered admin/visits/new.html.erb within layouts/admin (4.1ms)
+Completed 200 OK in 117ms (Views: 111.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/jquery.validationEngine-pl.js" for 127.0.0.1 at 2019-02-05 14:55:00 +0100
+Started GET "/assets/validationEngine.jquery.css" for 127.0.0.1 at 2019-02-05 14:55:00 +0100
+Started GET "/assets/jquery.validationEngine.js" for 127.0.0.1 at 2019-02-05 14:55:00 +0100
+Started GET "/admin/visits/scheduler/1" for 127.0.0.1 at 2019-02-05 14:55:00 +0100
+Processing by Admin::VisitsController#scheduler as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mVisit Load (1.3ms)[0m  [1m[34mSELECT "visits"."id", "visits"."start_time", SUM("duration") as duration FROM "visits" LEFT JOIN "services_visits" ON "visits"."id"="services_visits"."visit_id" LEFT JOIN "services" ON "services"."id"="services_visits"."service_id" LEFT JOIN "employees" ON "employees"."id"="services_visits"."employee_id" WHERE "services_visits"."employee_id" = $1 GROUP BY "visits"."id"[0m  [["employee_id", "1"]]
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/service/index" for 127.0.0.1 at 2019-02-05 14:56:37 +0100
+Processing by Admin::ServiceController#index as HTML
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/service/index.html.erb within layouts/admin
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  Rendered admin/service/index.html.erb within layouts/admin (7.7ms)
+Completed 200 OK in 148ms (Views: 102.0ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/admin/visits/index" for 127.0.0.1 at 2019-02-05 14:56:38 +0100
+Processing by Admin::VisitsController#index as HTML
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.2ms)[0m  [1m[34mSELECT "visits".* FROM "visits"[0m
+  [1m[36mServiceVisit Load (0.2ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 1]]
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.2ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 2]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.2ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 4]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.2ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 5]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.2ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/visits/index.html.erb within layouts/admin
+  [1m[36mVisit Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 LIMIT $3[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.4ms)[0m  [1m[34mSELECT "visits".* FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 ORDER BY "visits"."start_time" ASC[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered admin/visits/index.html.erb within layouts/admin (7.2ms)
+Completed 200 OK in 184ms (Views: 113.0ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/admin/visits/edit/3" for 127.0.0.1 at 2019-02-05 14:56:41 +0100
+Started GET "/admin/visits/scheduler/1,1" for 127.0.0.1 at 2019-02-05 14:56:41 +0100
+Processing by Admin::VisitsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.2ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+Processing by Admin::VisitsController#scheduler as JSON
+  Parameters: {"id"=>"1,1"}
+  [1m[36mVisit Load (1.5ms)[0m  [1m[34mSELECT "visits"."id", "visits"."start_time", SUM("duration") as duration FROM "visits" LEFT JOIN "services_visits" ON "visits"."id"="services_visits"."visit_id" LEFT JOIN "services" ON "services"."id"="services_visits"."service_id" LEFT JOIN "employees" ON "employees"."id"="services_visits"."employee_id" WHERE "services_visits"."employee_id" = $1 GROUP BY "visits"."id"[0m  [["employee_id", "1"]]
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 1.5ms)
+
+
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.4ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  Rendering admin/visits/new.html.erb within layouts/admin
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "lower(last_name)", "lower(first_name)". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in _app_views_admin_visits_new_html_erb__1002962395_106649300 at C:/Users/b-pc/Desktop/repoo/projekt_aplikacje_internetowe/app/views/admin/visits/new.html.erb:15)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" ORDER BY lower(last_name), lower(first_name)[0m
+  Rendered admin/visits/new.html.erb within layouts/admin (3.9ms)
+Completed 200 OK in 116ms (Views: 94.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/visits/scheduler/1" for 127.0.0.1 at 2019-02-05 14:56:41 +0100
+Processing by Admin::VisitsController#scheduler as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mVisit Load (0.5ms)[0m  [1m[34mSELECT "visits"."id", "visits"."start_time", SUM("duration") as duration FROM "visits" LEFT JOIN "services_visits" ON "visits"."id"="services_visits"."visit_id" LEFT JOIN "services" ON "services"."id"="services_visits"."service_id" LEFT JOIN "employees" ON "employees"."id"="services_visits"."employee_id" WHERE "services_visits"."employee_id" = $1 GROUP BY "visits"."id"[0m  [["employee_id", "1"]]
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/admin/visits/update/3" for 127.0.0.1 at 2019-02-05 14:56:45 +0100
+Processing by Admin::VisitsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mZARcwXhTsLgZ+x80Q1TTMuPAjSzEqXb3RIG/JhGPbFezkHX7LRHjrfK69t76ccPuXot6FrQBqo1DJiVHzQzxg==", "visit"=>{"client_id"=>"1", "status"=>"true", "comments"=>"", "discount"=>"0", "services"=>["1,1"], "start_time"=>"2019-02-05 15:15:00 UTC"}, "id"=>"3"}
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.4ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("services"."price") FROM "services" WHERE "services"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVisit Update (0.2ms)[0m  [1m[33mUPDATE "visits" SET "status" = $1, "updated_at" = $2 WHERE "visits"."id" = $3[0m  [["status", true], ["updated_at", "2019-02-05 13:56:45.608782"], ["id", 3]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mServiceVisit Destroy (0.2ms)[0m  [1m[31mDELETE FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mServiceVisit Create (0.2ms)[0m  [1m[32mINSERT INTO "services_visits" ("client_id", "employee_id", "service_id", "visit_id", "client_opinion_rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["client_id", 1], ["employee_id", 1], ["service_id", 1], ["visit_id", 3], ["client_opinion_rating", 1], ["created_at", "2019-02-05 13:56:45.611305"], ["updated_at", "2019-02-05 13:56:45.611305"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/visits/index
+Completed 302 Found in 9ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/admin/visits/index" for 127.0.0.1 at 2019-02-05 14:56:45 +0100
+Processing by Admin::VisitsController#index as HTML
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT "visits".* FROM "visits"[0m
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 2]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.2ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 4]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 5]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/visits/index.html.erb within layouts/admin
+  [1m[36mVisit Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 LIMIT $3[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.3ms)[0m  [1m[34mSELECT "visits".* FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 ORDER BY "visits"."start_time" ASC[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered admin/visits/index.html.erb within layouts/admin (4.2ms)
+Completed 200 OK in 123ms (Views: 97.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/jquery.validationEngine-pl.js" for 127.0.0.1 at 2019-02-05 14:56:45 +0100
+Started GET "/assets/jquery.validationEngine.js" for 127.0.0.1 at 2019-02-05 14:56:45 +0100
+Started GET "/assets/validationEngine.jquery.css" for 127.0.0.1 at 2019-02-05 14:56:45 +0100
+Started GET "/admin/visits/edit/3" for 127.0.0.1 at 2019-02-05 14:57:07 +0100
+Processing by Admin::VisitsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.4ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  Rendering admin/visits/new.html.erb within layouts/admin
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "lower(last_name)", "lower(first_name)". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in _app_views_admin_visits_new_html_erb__1002962395_103899780 at C:/Users/b-pc/Desktop/repoo/projekt_aplikacje_internetowe/app/views/admin/visits/new.html.erb:15)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" ORDER BY lower(last_name), lower(first_name)[0m
+  Rendered admin/visits/new.html.erb within layouts/admin (2.9ms)
+Completed 200 OK in 97ms (Views: 92.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/visits/scheduler/1" for 127.0.0.1 at 2019-02-05 14:57:07 +0100
+Processing by Admin::VisitsController#scheduler as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mVisit Load (0.9ms)[0m  [1m[34mSELECT "visits"."id", "visits"."start_time", SUM("duration") as duration FROM "visits" LEFT JOIN "services_visits" ON "visits"."id"="services_visits"."visit_id" LEFT JOIN "services" ON "services"."id"="services_visits"."service_id" LEFT JOIN "employees" ON "employees"."id"="services_visits"."employee_id" WHERE "services_visits"."employee_id" = $1 GROUP BY "visits"."id"[0m  [["employee_id", "1"]]
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/admin/visits/update/3" for 127.0.0.1 at 2019-02-05 14:57:17 +0100
+Processing by Admin::VisitsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i/DvcGLMXqM2nc/AcfCqtFgEBs4X5sXPs0BXNRtE0GdMrr/Ui5lX72EwyGfbFD73KvEpEv4kZr5bXslcnDbeEA==", "visit"=>{"client_id"=>"1", "status"=>"false", "comments"=>"", "discount"=>"0", "services"=>["1,1"], "start_time"=>"2019-02-05 15:15:00 UTC"}, "id"=>"3"}
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.4ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("services"."price") FROM "services" WHERE "services"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVisit Update (0.2ms)[0m  [1m[33mUPDATE "visits" SET "status" = $1, "updated_at" = $2 WHERE "visits"."id" = $3[0m  [["status", false], ["updated_at", "2019-02-05 13:57:17.277955"], ["id", 3]]
+  [1m[35m (12.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mServiceVisit Destroy (0.3ms)[0m  [1m[31mDELETE FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mServiceVisit Create (0.2ms)[0m  [1m[32mINSERT INTO "services_visits" ("client_id", "employee_id", "service_id", "visit_id", "client_opinion_rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["client_id", 1], ["employee_id", 1], ["service_id", 1], ["visit_id", 3], ["client_opinion_rating", 1], ["created_at", "2019-02-05 13:57:17.292082"], ["updated_at", "2019-02-05 13:57:17.292082"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/visits/index
+Completed 302 Found in 20ms (ActiveRecord: 14.5ms)
+
+
+Started GET "/admin/visits/index" for 127.0.0.1 at 2019-02-05 14:57:17 +0100
+Processing by Admin::VisitsController#index as HTML
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT "visits".* FROM "visits"[0m
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 2]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 4]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 5]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/visits/index.html.erb within layouts/admin
+  [1m[36mVisit Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 LIMIT $3[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.3ms)[0m  [1m[34mSELECT "visits".* FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 ORDER BY "visits"."start_time" ASC[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered admin/visits/index.html.erb within layouts/admin (4.3ms)
+Completed 200 OK in 130ms (Views: 108.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.validationEngine-pl.js" for 127.0.0.1 at 2019-02-05 14:57:17 +0100
+Started GET "/assets/validationEngine.jquery.css" for 127.0.0.1 at 2019-02-05 14:57:17 +0100
+Started GET "/assets/jquery.validationEngine.js" for 127.0.0.1 at 2019-02-05 14:57:17 +0100
+Started GET "/admin/visits/edit/3" for 127.0.0.1 at 2019-02-05 14:57:21 +0100
+Processing by Admin::VisitsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.4ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  Rendering admin/visits/new.html.erb within layouts/admin
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "lower(last_name)", "lower(first_name)". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in _app_views_admin_visits_new_html_erb__1002962395_100895440 at C:/Users/b-pc/Desktop/repoo/projekt_aplikacje_internetowe/app/views/admin/visits/new.html.erb:15)
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients" ORDER BY lower(last_name), lower(first_name)[0m
+  Rendered admin/visits/new.html.erb within layouts/admin (3.1ms)
+Completed 200 OK in 100ms (Views: 96.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/visits/scheduler/1" for 127.0.0.1 at 2019-02-05 14:57:21 +0100
+Processing by Admin::VisitsController#scheduler as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mVisit Load (0.9ms)[0m  [1m[34mSELECT "visits"."id", "visits"."start_time", SUM("duration") as duration FROM "visits" LEFT JOIN "services_visits" ON "visits"."id"="services_visits"."visit_id" LEFT JOIN "services" ON "services"."id"="services_visits"."service_id" LEFT JOIN "employees" ON "employees"."id"="services_visits"."employee_id" WHERE "services_visits"."employee_id" = $1 GROUP BY "visits"."id"[0m  [["employee_id", "1"]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/admin/visits/update/3" for 127.0.0.1 at 2019-02-05 14:57:26 +0100
+Processing by Admin::VisitsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MoumHailExIBn6BwcB57TOeIZMzGBoCWSL/Q+iQNfNz11fa5QfAaXlYyp9fa+u8PlX1LEC/EI+egoU6To39yqw==", "visit"=>{"client_id"=>"1", "status"=>"true", "comments"=>"", "discount"=>"0", "services"=>["1,1"], "start_time"=>"2019-02-05 15:15:00 UTC"}, "id"=>"3"}
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.4ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("services"."price") FROM "services" WHERE "services"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVisit Update (0.1ms)[0m  [1m[33mUPDATE "visits" SET "status" = $1, "updated_at" = $2 WHERE "visits"."id" = $3[0m  [["status", true], ["updated_at", "2019-02-05 13:57:26.151558"], ["id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mServiceVisit Destroy (0.2ms)[0m  [1m[31mDELETE FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mServiceVisit Create (0.1ms)[0m  [1m[32mINSERT INTO "services_visits" ("client_id", "employee_id", "service_id", "visit_id", "client_opinion_rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["client_id", 1], ["employee_id", 1], ["service_id", 1], ["visit_id", 3], ["client_opinion_rating", 1], ["created_at", "2019-02-05 13:57:26.153084"], ["updated_at", "2019-02-05 13:57:26.153084"]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/visits/index
+Completed 302 Found in 9ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/visits/index" for 127.0.0.1 at 2019-02-05 14:57:26 +0100
+Processing by Admin::VisitsController#index as HTML
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.2ms)[0m  [1m[34mSELECT "visits".* FROM "visits"[0m
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 1]]
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 2]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 4]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 5]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/visits/index.html.erb within layouts/admin
+  [1m[36mVisit Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 LIMIT $3[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.3ms)[0m  [1m[34mSELECT "visits".* FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 ORDER BY "visits"."start_time" ASC[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered admin/visits/index.html.erb within layouts/admin (4.4ms)
+Completed 200 OK in 115ms (Views: 93.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/jquery.validationEngine-pl.js" for 127.0.0.1 at 2019-02-05 14:57:26 +0100
+Started GET "/assets/jquery.validationEngine.js" for 127.0.0.1 at 2019-02-05 14:57:26 +0100
+Started GET "/assets/validationEngine.jquery.css" for 127.0.0.1 at 2019-02-05 14:57:26 +0100
+Started GET "/admin/visits/edit/5" for 127.0.0.1 at 2019-02-05 14:57:32 +0100
+Processing by Admin::VisitsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.4ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 5]]
+  Rendering admin/visits/new.html.erb within layouts/admin
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "lower(last_name)", "lower(first_name)". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in _app_views_admin_visits_new_html_erb__1002962395_93513720 at C:/Users/b-pc/Desktop/repoo/projekt_aplikacje_internetowe/app/views/admin/visits/new.html.erb:15)
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT "clients".* FROM "clients" ORDER BY lower(last_name), lower(first_name)[0m
+  Rendered admin/visits/new.html.erb within layouts/admin (3.2ms)
+Completed 200 OK in 110ms (Views: 105.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/visits/scheduler/1" for 127.0.0.1 at 2019-02-05 14:57:32 +0100
+Processing by Admin::VisitsController#scheduler as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mVisit Load (0.8ms)[0m  [1m[34mSELECT "visits"."id", "visits"."start_time", SUM("duration") as duration FROM "visits" LEFT JOIN "services_visits" ON "visits"."id"="services_visits"."visit_id" LEFT JOIN "services" ON "services"."id"="services_visits"."service_id" LEFT JOIN "employees" ON "employees"."id"="services_visits"."employee_id" WHERE "services_visits"."employee_id" = $1 GROUP BY "visits"."id"[0m  [["employee_id", "1"]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/admin/visits/update/5" for 127.0.0.1 at 2019-02-05 14:57:36 +0100
+Processing by Admin::VisitsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"saCPRA1DkxDiivLlDDKST9sgMRErthQCEuRr5OnDVwV2/t/g5BaaXLUn9UKm1gYMqdUezcJ0t3P6+vWNbrFZcg==", "visit"=>{"client_id"=>"1", "status"=>"true", "comments"=>"", "discount"=>"0", "services"=>["1,1"], "start_time"=>"2019-02-06 14:00:00 UTC"}, "id"=>"5"}
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT  "visits".* FROM "visits" WHERE "visits"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees" INNER JOIN "employees_services" ON "employees"."id" = "employees_services"."employee_id" WHERE "employees_services"."service_id" = $1[0m  [["service_id", 1]]
+  [1m[36mServiceVisit Load (0.7ms)[0m  [1m[34mSELECT * FROM "services_visits" INNER JOIN "services" ON "services"."id" = "services_visits"."service_id" INNER JOIN "employees" ON "employees"."id" = "services_visits"."employee_id" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 5]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("services"."price") FROM "services" WHERE "services"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVisit Update (0.2ms)[0m  [1m[33mUPDATE "visits" SET "status" = $1, "updated_at" = $2 WHERE "visits"."id" = $3[0m  [["status", true], ["updated_at", "2019-02-05 13:57:36.733214"], ["id", 5]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mServiceVisit Destroy (0.2ms)[0m  [1m[31mDELETE FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 5]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mServiceVisit Create (0.3ms)[0m  [1m[32mINSERT INTO "services_visits" ("client_id", "employee_id", "service_id", "visit_id", "client_opinion_rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["client_id", 1], ["employee_id", 1], ["service_id", 1], ["visit_id", 5], ["client_opinion_rating", 1], ["created_at", "2019-02-05 13:57:36.735635"], ["updated_at", "2019-02-05 13:57:36.735635"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/visits/index
+Completed 302 Found in 10ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/admin/visits/index" for 127.0.0.1 at 2019-02-05 14:57:36 +0100
+Processing by Admin::VisitsController#index as HTML
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT "visits".* FROM "visits"[0m
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 2]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 4]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 5]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/visits/index.html.erb within layouts/admin
+  [1m[36mVisit Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 LIMIT $3[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.3ms)[0m  [1m[34mSELECT "visits".* FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 ORDER BY "visits"."start_time" ASC[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered admin/visits/index.html.erb within layouts/admin (4.3ms)
+Completed 200 OK in 117ms (Views: 95.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/jquery.validationEngine-pl.js" for 127.0.0.1 at 2019-02-05 14:57:36 +0100
+Started GET "/assets/validationEngine.jquery.css" for 127.0.0.1 at 2019-02-05 14:57:36 +0100
+Started GET "/assets/jquery.validationEngine.js" for 127.0.0.1 at 2019-02-05 14:57:36 +0100
+Started GET "/admin/index" for 127.0.0.1 at 2019-02-05 14:58:03 +0100
+Processing by AdminController#index as HTML
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/index.html.erb within layouts/admin
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2[0m  [["start_time", "2019-02-04 23:00:00"], ["start_time", "2019-02-05 23:00:00"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2[0m  [["start_time", "2019-02-03 23:00:00"], ["start_time", "2019-02-10 23:00:00"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2[0m  [["start_time", "2019-01-31 23:00:00"], ["start_time", "2019-02-28 23:00:00"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "visits"[0m
+  Rendered admin/index.html.erb within layouts/admin (2.6ms)
+Completed 200 OK in 102ms (Views: 89.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/employees/index" for 127.0.0.1 at 2019-02-05 14:58:04 +0100
+Processing by Admin::EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/employees/index.html.erb within layouts/admin
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  Rendered admin/employees/index.html.erb within layouts/admin (1.8ms)
+Completed 200 OK in 142ms (Views: 118.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/employees_services/index" for 127.0.0.1 at 2019-02-05 14:58:06 +0100
+Processing by Admin::EmployeesServicesController#index as HTML
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/employees_services/index.html.erb within layouts/admin
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services" INNER JOIN "employees_services" ON "services"."id" = "employees_services"."service_id" WHERE "employees_services"."employee_id" = $1[0m  [["employee_id", 1]]
+  Rendered admin/employees_services/index.html.erb within layouts/admin (4.9ms)
+Completed 200 OK in 112ms (Views: 91.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/clients/index" for 127.0.0.1 at 2019-02-05 14:58:09 +0100
+Processing by Admin::ClientsController#index as HTML
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/clients/index.html.erb within layouts/admin
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered admin/clients/index.html.erb within layouts/admin (1.5ms)
+Completed 200 OK in 117ms (Views: 92.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/visits/index" for 127.0.0.1 at 2019-02-05 14:58:10 +0100
+Processing by Admin::VisitsController#index as HTML
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.1ms)[0m  [1m[34mSELECT "visits".* FROM "visits"[0m
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 1]]
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 2]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 4]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 5]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/visits/index.html.erb within layouts/admin
+  [1m[36mVisit Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 LIMIT $3[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.3ms)[0m  [1m[34mSELECT "visits".* FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 ORDER BY "visits"."start_time" ASC[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered admin/visits/index.html.erb within layouts/admin (5.6ms)
+Completed 200 OK in 126ms (Views: 104.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/service/index" for 127.0.0.1 at 2019-02-05 14:58:11 +0100
+Processing by Admin::ServiceController#index as HTML
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/service/index.html.erb within layouts/admin
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  Rendered admin/service/index.html.erb within layouts/admin (1.4ms)
+Completed 200 OK in 106ms (Views: 92.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/comments/index" for 127.0.0.1 at 2019-02-05 14:58:13 +0100
+Processing by Admin::CommentsController#index as HTML
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/comments/index.html.erb within layouts/admin
+  [1m[36mServiceVisit Load (0.3ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."client_opinion_added" BETWEEN $1 AND $2 ORDER BY "services_visits"."client_opinion_added" ASC[0m  [["client_opinion_added", "2019-02-01 00:00:00"], ["client_opinion_added", "2019-03-01 23:59:59.999999"]]
+  Rendered admin/comments/index.html.erb within layouts/admin (1.7ms)
+Completed 200 OK in 139ms (Views: 108.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/incomes/index" for 127.0.0.1 at 2019-02-05 14:58:14 +0100
+Processing by Admin::IncomesController#index as HTML
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.2ms)[0m  [1m[34mSELECT start_time,SUM(price) as price FROM "visits" WHERE "visits"."status" = $1 GROUP BY "visits"."start_time" ORDER BY start_time DESC[0m  [["status", true]]
+  Rendering admin/incomes/index.html.erb within layouts/admin
+  [1m[36mVisit Load (0.4ms)[0m  [1m[34mSELECT start_time,SUM(price) as price FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 AND "visits"."status" = $3 GROUP BY "visits"."start_time" ORDER BY start_time DESC[0m  [["start_time", "2019-01-31 23:00:00"], ["start_time", "2019-02-28 22:59:59.999999"], ["status", true]]
+  [1m[36mCACHE Visit Load (0.0ms)[0m  [1m[34mSELECT start_time,SUM(price) as price FROM "visits" WHERE "visits"."status" = $1 GROUP BY "visits"."start_time" ORDER BY start_time DESC[0m  [["status", true]]
+  Rendered admin/incomes/index.html.erb within layouts/admin (2.3ms)
+Completed 200 OK in 108ms (Views: 92.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/visits/index" for 127.0.0.1 at 2019-02-05 14:58:22 +0100
+Processing by Admin::VisitsController#index as HTML
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 ORDER BY "employees"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.2ms)[0m  [1m[34mSELECT "visits".* FROM "visits"[0m
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 1]]
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 2]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 4]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.2ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 3]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mServiceVisit Load (0.1ms)[0m  [1m[34mSELECT "services_visits".* FROM "services_visits" WHERE "services_visits"."visit_id" = $1[0m  [["visit_id", 5]]
+  [1m[36mCACHE Service Load (0.0ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/visits/index.html.erb within layouts/admin
+  [1m[36mVisit Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 LIMIT $3[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"], ["LIMIT", 1]]
+  [1m[36mVisit Load (0.3ms)[0m  [1m[34mSELECT "visits".* FROM "visits" WHERE "visits"."start_time" BETWEEN $1 AND $2 ORDER BY "visits"."start_time" ASC[0m  [["start_time", "2019-02-01 00:00:00"], ["start_time", "2019-03-01 23:59:59.999999"]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Client Load (0.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered admin/visits/index.html.erb within layouts/admin (4.2ms)
+Completed 200 OK in 121ms (Views: 96.9ms | ActiveRecord: 2.0ms)
+
+

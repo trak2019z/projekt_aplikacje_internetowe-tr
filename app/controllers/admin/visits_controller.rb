@@ -122,7 +122,7 @@ class Admin::VisitsController < ApplicationController
 
 
 
-      redirect_to action: 'edit'
+      redirect_to action: 'index'
       #render json: @visit
 
     else
