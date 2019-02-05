@@ -15,6 +15,7 @@
         right: 'month,agendaWeek,agendaDay'
       },
       lang: 'pl',
+        hiddenDays: [0,6],
       events: JSON.parse('<%= @events.html_safe %>')
     });
 

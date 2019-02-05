@@ -51,6 +51,7 @@
     <orderEntry type="library" scope="PROVIDED" name="devise (v4.5.0, ruby-2.5.3-p105) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.8.0, ruby-2.5.3-p105) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, ruby-2.5.3-p105) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="execjs-fastnode (v0.2.1, ruby-2.5.3-p105) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.25, ruby-2.5.3-p105) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, ruby-2.5.3-p105) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="groupdate (v4.1.1, ruby-2.5.3-p105) [gem]" level="application" />

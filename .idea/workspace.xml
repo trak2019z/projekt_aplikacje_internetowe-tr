@@ -18,7 +18,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/aplikacje_internetowe@Development__projekt.rcov" NAME="Development: projekt Coverage Results" MODIFIED="1548449913789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="projekt" />
     <SUITE FILE_PATH="coverage/projekt@Development__projekt.rcov" NAME="Development: projekt Coverage Results" MODIFIED="1547806501208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="projekt" />
-    <SUITE FILE_PATH="coverage/projekt_aplikacje_internetowe@Development__projekt.rcov" NAME="Development: projekt Coverage Results" MODIFIED="1549368071089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="projekt" />
+    <SUITE FILE_PATH="coverage/projekt_aplikacje_internetowe@Development__projekt.rcov" NAME="Development: projekt Coverage Results" MODIFIED="1549371907283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="projekt" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/visits/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="272" column="7" lean-forward="true" selection-start-line="272" selection-start-column="7" selection-end-line="272" selection-end-column="7" />
+            <state relative-caret-position="-476">
+              <caret line="253" column="21" lean-forward="true" selection-start-line="253" selection-start-column="21" selection-end-line="253" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
@@ -58,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
-              <caret line="83" column="42" lean-forward="true" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
+              <caret line="83" column="34" lean-forward="true" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -80,6 +80,8 @@
       <find>agendaWeek</find>
       <find>agenda</find>
       <find>selectable</find>
+      <find>alert(&quot;Tej godziny nie można juz wybrać. Wybierz inną!&quot;);</find>
+      <find>exec</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -105,11 +107,13 @@
         <option value="$PROJECT_DIR$/app/views/admin/comments/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/service/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/employees/index.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/controllers/admin/incomes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/incomes/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/visits/new.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/incomes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/admin/visits/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/admin/visits/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/visits/new.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -148,7 +152,42 @@
               <item name="projekt_aplikacje_internetowe" type="b2602c69:ProjectViewProjectNode" />
               <item name="projekt_aplikacje_internetowe" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projekt_aplikacje_internetowe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projekt_aplikacje_internetowe" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projekt_aplikacje_internetowe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projekt_aplikacje_internetowe" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projekt_aplikacje_internetowe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projekt_aplikacje_internetowe" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projekt_aplikacje_internetowe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projekt_aplikacje_internetowe" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="visits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projekt_aplikacje_internetowe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projekt_aplikacje_internetowe" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="visits" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projekt_aplikacje_internetowe" type="b2602c69:ProjectViewProjectNode" />
@@ -320,12 +359,12 @@
       <workItem from="1549364250945" duration="128000" />
       <workItem from="1549364445284" duration="46000" />
       <workItem from="1549364550255" duration="1561000" />
-      <workItem from="1549366487672" duration="3947000" />
+      <workItem from="1549366487672" duration="7112000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52810000" />
+    <option name="totallyTimeSpent" value="55975000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -338,7 +377,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -354,7 +392,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" sideWeight="0.49840087" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49840087" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.47761193" weight="0.30877572" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.3160981" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.3160981" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4941302" visible="true" weight="0.3195652" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -366,35 +404,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/employee.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/employee_service.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/service.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/service_visit.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/reservation.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/reservation_controller.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/comments_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="35" column="95" selection-start-line="35" selection-start-column="95" selection-end-line="35" selection-end-column="95" />
         </state>
       </provider>
     </entry>
@@ -1851,20 +1864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/incomes/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
@@ -1886,44 +1885,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/visits/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/visits/create.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/visits/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/visits/update.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/visits/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <folding>
-            <element signature="n#style#0;n#span#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/options/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/incomes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/clients/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
@@ -1942,21 +1905,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reservation/reserved.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/visits/create.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/services/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reservation/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/visits/edit_comment.html.erb">
       <provider selected="true" editor-type-id="text-editor">
@@ -1966,15 +1920,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/visits/end_visits.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/visits/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/visits/reserved_visits.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/visits/update.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
@@ -1994,13 +1939,121 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/reservation_controller.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reservation/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reservation/reserved.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/options/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/incomes/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/visits/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/visits/remove.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/visits/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/visits/create.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/employees_services_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/employees_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/clients_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/visits/create.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/incomes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/visits/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/visits/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="258" column="14" selection-start-line="258" selection-start-column="14" selection-end-line="258" selection-end-column="78" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/visits/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/visits/update.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/visits/reserved_visits.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/visits/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="272" column="7" lean-forward="true" selection-start-line="272" selection-start-column="7" selection-end-line="272" selection-end-column="7" />
+        <state relative-caret-position="-476">
+          <caret line="253" column="21" lean-forward="true" selection-start-line="253" selection-start-column="21" selection-end-line="253" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#span#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
@@ -2011,7 +2064,7 @@
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="83" column="42" lean-forward="true" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
+          <caret line="83" column="34" lean-forward="true" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
         </state>
       </provider>
     </entry>

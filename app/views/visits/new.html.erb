@@ -240,6 +240,7 @@
 
           if(start.isBefore(moment())) {
               $('#calendar').fullCalendar('unselect');
+              alert("Wybrana przez Ciebie godzina już minęła, wybierz inną!");
               return false;
           }
 

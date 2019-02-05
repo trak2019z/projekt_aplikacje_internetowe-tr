@@ -250,8 +250,15 @@
       maxTime: '16:00:00',
       timezone: 'Europe/Warsaw',
       lang: 'pl',
+        hiddenDays: [0,6],
       selectable: true,
       select: function (start, end, jsEvent, view) {
+
+          if(start.isBefore(moment())) {
+              $('#calendar').fullCalendar('unselect');
+              alert("Wybrana przez Ciebie godzina już minęła, wybierz inną!");
+              return false;
+          }
 
         if ($('#servicesSum').hasClass('fetched')) {
           $('#calendar').fullCalendar('removeEvents', 'REZERWACJA');

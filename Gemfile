@@ -24,7 +24,7 @@ gem 'coffee-rails'
 # gem 'therubyracer', platforms: :ruby
 
 
-# gem 'execjs-fastnode'
+gem 'execjs-fastnode'
 
 # gem "therubyracer"
 
